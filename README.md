@@ -1,4 +1,0 @@
-# Java-basics
-class Datatype{
-
-}
