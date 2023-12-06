@@ -1,1 +1,4 @@
 # Java-basics
+class Datatype{
+
+}
