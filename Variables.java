@@ -9,8 +9,8 @@ public class Variables
 	static float g;
 	static double h;
 	public static void func() {
-    byte cy_inc = 127;
-    System.out.println(cy_inc+1);
+		byte cy_inc = 127;
+		System.out.println(cy_inc+1);
 		//default values of above class variables
 		System.out.println(a);
 		System.out.println(b);
