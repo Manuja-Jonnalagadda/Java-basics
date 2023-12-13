@@ -1,5 +1,5 @@
 public class Student{
-  public int id=201; // acessed throgh the object
+  public static int id=201; // acessed throgh the object
   private long phone=9876512340l;// only through getters and setters
   default String name="Swetha";//can be acessed within package
   protected int marks=89; //can be accessed by child classes
@@ -12,5 +12,10 @@ public class Student{
 }
 public class Main{
   public static void main(String[] args){
-    System.out.println("id is :"+id);
+    System.out.println("id is :"+Student.id);
+    Student student=new Student();
+    System.out.println("phone number is :"+student.getPhone());
+    System.out.println("marks are  :"+Student.marks);
+    System.out.println("name is :"+Student.name);
+    
 }
