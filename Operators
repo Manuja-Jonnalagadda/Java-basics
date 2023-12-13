@@ -1,0 +1,15 @@
+class Opreators{
+  public static void main(String[] args){
+    int a=5, b=6, c=109;
+    //Assignment Operators
+    System.out.println("a+=2 "+(a+=2));
+    System.out.println("a*=2 "+(a*=2));
+    System.out.println("a/=2 "+(a/=2));
+    //Increment(Unary) Operators
+    System.out.println("pre-increment of "+a+" : "+(++a));
+    // in post increment return the value first later incremets the value
+    System.out.println("post-increment "+a+" : "+(a++));
+    //Relational operators, conditional operator and Logical Operators
+    System.out.println("largest among three values is"+((a>=b && a >=c) ?a:(b > c ? b : c) ));
+  }
+}
