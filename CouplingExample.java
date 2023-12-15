@@ -2,15 +2,15 @@ class Mobile{
 	Os os;
 	Mobile(){
 		os=new Ios();  // os object is created when mobile object is created
-		// this is high coupling
+		// this is tight coupling -- parent knows the child object implementation
 		System.out.println("through constructor");
 	}
 	void setOs(Os os) {
 		this.os=os; //loose coupling
 		System.out.println("through setter");
 	}
-	void osType() {
-		System.out.println((os.getClass()));
+	Class<? extends Os> osType() {
+		return os.getClass();
 	}
 }
 
@@ -24,7 +24,8 @@ public class CouplingExample {
 	public static void main(String[] args) {
 		Mobile mobile=new Mobile();
 		mobile.setOs(new Android());
-		mobile.osType();
+		System.out.println(mobile.osType());
+		
 	}
 
 }
